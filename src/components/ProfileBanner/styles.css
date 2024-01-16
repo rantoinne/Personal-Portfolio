@@ -1,0 +1,54 @@
+.profile_banner-wrapper-div {
+  display: flex;
+  height: 60vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+.profile_banner-headshot {
+  width: 42vh;
+  height: 42vh;
+  border-radius: 21vh;
+  box-shadow: 4px 4px 4px 4px #00000030;
+}
+
+.profile_banner-row-wrapper-div {
+  display: flex;
+  gap: 2vh;
+  margin-top: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_banner-contact-btn {
+  background-color: white;
+  border: 2px solid #353b48;
+}
+
+.profile_banner-greeting-text {
+  font-size: 1rem;
+  color: #718093;
+  letter-spacing: 2px;
+}
+
+.profile_banner-full-name {
+  font-size: 3rem;
+  color: #000;
+}
+
+.profile_banner-designation {
+  font-size: 1.5rem;
+  color: #535c68;
+  line-height: 4rem;
+}
+
+.profile_banner-icon {
+  width: 3vh;
+  height: 3vh;
+}
+
+.profile_banner-margin {
+  margin-top: 22px;
+}
