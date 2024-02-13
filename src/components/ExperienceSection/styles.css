@@ -1,0 +1,78 @@
+.experience_section-container-div {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 100vh;
+}
+
+.experience_section-title {
+  font-size: 1rem;
+  color: #535c68;
+}
+
+.experience_section-subtitle {
+  font-size: 3.5rem;
+  color: #000;
+}
+
+.experience_section-cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 15vh;
+}
+
+.experience_section-skills-section-container {
+  width: 35%;
+  border: 2px solid #535c6870;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  height: 27vh;
+}
+
+.experience_section-skills-section {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-row-start: auto;
+  grid-row-end: auto;
+  grid-column-gap: 10%;
+  grid-row-gap: 30px;
+  .experience_section-skill-item {
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.experience_section-skill-logo {
+  width: 3.5rem;
+  object-fit: contain;
+  background-blend-mode: color-burn;
+}
+
+.experience_section-skill-level-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2rem;
+  p {
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 700;
+    &:nth-child(2) {
+      color: #535c68;
+      font-size: 1rem;
+    }
+  }
+}
+
+.experience_section-skill-type-text {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 1rem;
+}

@@ -34,10 +34,12 @@ const ProfileBanner = () => {
           <img
             src={GithubIcon}
             className="profile_banner-icon"
+            onClick={() => window.open("https://github.com/rantoinne")}
             />
           <img
             src={LinkedinIcon}
             className="profile_banner-icon"
+            onClick={() => window.open("https://www.linkedin.com/in/ravi-asthana-rndev/")}
           />
         </div>
       </div>
