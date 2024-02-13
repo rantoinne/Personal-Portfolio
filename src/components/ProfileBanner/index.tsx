@@ -22,6 +22,7 @@ const ProfileBanner = () => {
         <div className="profile_banner-row-wrapper-div">
           <Button
             title="Download CV"
+            onClick={() => window.open('../../assets/docs/Resume.pdf')}
           />
           <Button
             title="Contact me"

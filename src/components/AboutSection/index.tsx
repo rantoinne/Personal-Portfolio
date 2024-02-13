@@ -20,28 +20,38 @@ const AboutSection = ({ id }: AboutSectionProps) => {
       <div className="about_section-about-container">
         <img
           src={AboutSvg}
-          className="about_section-headshot-image"
+          className="about_section-image"
         />
-        <div className="about_section-text-content-container">
-          {/* XP div */}
-          <div className="about_section-experience-container">
-            <img
-              src={MedalIcon}
-            />
-            <p>Experience</p>
-            <p className="about_section-detail-text">5+ years</p>
-            <p className="about_section-detail-text">Full Stack development</p>
+
+        <div className="about_section-text-content-column-wrapper">
+          <div className="about_section-text-content-container">
+            {/* XP div */}
+            <div className="about_section-experience-container">
+              <img
+                src={MedalIcon}
+                className="about_section-highlight-image"
+              />
+              <p>Experience</p>
+              <p className="about_section-detail-text">5+ years</p>
+              <p className="about_section-detail-text">Full Stack development</p>
+            </div>
+
+            {/* Ed div */}
+            <div className="about_section-experience-container">
+              <img
+                src={EducationIcon}
+                className="about_section-highlight-image"
+              />
+              <p>Education</p>
+              <p className="about_section-detail-text">Bachelor of Technology</p>
+              <p className="about_section-detail-text">Computer Science</p>
+            </div>
           </div>
 
-          {/* Ed div */}
-          {/* <div className="about_section-education-container">
-            <img
-              src={EducationIcon}
-            />
-            <p>Education</p>
-            <p>Bachelor of Technology</p>
-            <p>Computer Science</p>
-          </div> */}
+          {/* Summary */}
+          <p className="about_section-summary-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
       </div>
     </div>
