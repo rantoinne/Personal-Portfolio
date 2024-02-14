@@ -1,53 +1,45 @@
+import projectsLib from '../../utils/projectsLib';
+import Button from '../Button';
 import './styles.css';
-import skillsImageLib from '../../utils/skillsImageLib';
-import { SKILL_TYPE } from '../../utils/enums';
 
 interface ProjectsSectionProps {
   id?: string;
 }
 
 const ProjectsSection = ({ id }: ProjectsSectionProps) => {
-  const renderSkillsWithLevels = (type: SKILL_TYPE) => {
-    return skillsImageLib[type].map(({ title, logo, level }) => {
-      if (title === 'HIDE') return (
-        <div key={title} className="experience_section-skill-item experience_section-hide-skill"/>
-      );
-      return (
-        <div key={title} className="experience_section-skill-item">
-          <img
-            src={logo}
-            className="experience_section-skill-logo"
+  const renderProjects = () => {
+    return projectsLib.map(p => (
+      <div className="project_section-projects">
+        <img
+          src={p.logo}
+          className="project_section-project-logo"
+        />
+        <p className="project_section-project-title">{p.title}</p>
+        <div className="project_section-button-container">
+          <Button
+            title="Github Link"
+            onClick={() => window.open(p.githubLink)}
           />
-          <div className="experience_section-skill-level-info-container">
-            <p>{title}</p>
-            <p>{level}</p>
-          </div>
+          <Button
+            title="Live Demo"
+            className="project_section-live-demo-button"
+            onClick={() => window.open(p.liveDemoLink)}
+          />
         </div>
-      );
-    });
+      </div>
+    ))
   };
   
   return (
     <div
       id={id}
-      className="experience_section-container-div"
+      className="project_section-container-div"
     >
-      <p className="experience_section-title">Explore my</p>
-      <p className="experience_section-subtitle">Experience</p>
+      <p className="project_section-title">Browse my</p>
+      <p className="project_section-subtitle">Projects</p>
 
-      <div className="experience_section-cards-wrapper">
-        <div className="experience_section-skills-section-container">
-          <p className="experience_section-skill-type-text">{SKILL_TYPE.FRONT_END}</p>
-          <div className="experience_section-skills-section">
-            {renderSkillsWithLevels(SKILL_TYPE.FRONT_END)}
-          </div>
-        </div>
-        <div className="experience_section-skills-section-container">
-          <p className="experience_section-skill-type-text">{SKILL_TYPE.BACK_END}</p>
-          <div className="experience_section-skills-section">
-            {renderSkillsWithLevels(SKILL_TYPE.BACK_END)}
-          </div>
-        </div>
+      <div className="project_section-projects-wrapper">
+        {renderProjects()}
       </div>
     </div>
   );

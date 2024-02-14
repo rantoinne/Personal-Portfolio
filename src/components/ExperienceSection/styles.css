@@ -1,7 +1,7 @@
 .experience_section-container-div {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .experience_section-title {
@@ -51,7 +51,7 @@
 .experience_section-skill-logo {
   width: 3.5rem;
   object-fit: contain;
-  background-blend-mode: color-burn;
+  mix-blend-mode: color-burn;
 }
 
 .experience_section-skill-level-info-container {

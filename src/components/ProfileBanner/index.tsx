@@ -11,7 +11,7 @@ const ProfileBanner = () => {
     <div className="profile_banner-wrapper-div">
       <img
         className="profile_banner-headshot"
-        src={ProfileImage}
+        // src={ProfileImage}
       />
 
       <div className="profile_banner-profile-info-wrapper-div">

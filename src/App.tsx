@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import ProfileBanner from './components/ProfileBanner';
 import AboutSection from './components/AboutSection';
 import ExperienceSection from './components/ExperienceSection';
+import ProjectsSection from './components/ProjectsSection';
+import ContactSection from './components/ContactSection';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <ProfileBanner />
       <AboutSection id="about" />
       <ExperienceSection id="experience" />
+      <ProjectsSection id="projects" />
+      <ContactSection id="contact" />
     </div>
   );
 }
